@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Your Result</title>
+	<link rel="stylesheet" type="text/css" href="style.css" >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+   <form id="check">
+   	
+    <h2 ><span>Result</span> Checker</h2>
+
+    <input id="result" type="number" placeholder="Enter your result" required> <br><br>
+
+    <input type="submit" value="Get Grade"> <br><br>
+
+      <div id="grade"></div>
+
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+
+   </form>
+
+   <script type="text/javascript">
+ 	  document.getElementById('check').addEventListener('submit', function(event){
+
+ 	  	event.preventDefault()
+
+ 	  	var result = document.getElementById("result").value
+
+ 	  	var grade = document.getElementById('grade')
+
+ 	  	if(result < 39){
+ 	  	  grade.innerHTML = 'you got Fail'
+ 	  	}
+
+ 	  	else if (result < 45) {
+	    grade.innerHTML = 'Pass'} 
+
+       else if (result < 49) {
+	     grade.innerHTML = 'Pass'
+
+       }else if (result < 64) {
+	    grade.innerHTML='Credit'
+
+       }else if (result < 74){
+	    grade.innerHTML = 'Very good';
+       }
+
+       else if (result < 100){
+	   grade.innerHTML = 'Excellent';
+}
+
+ 	 })
+
+ 	
+ </script>
+
+
+</body>
+</html>

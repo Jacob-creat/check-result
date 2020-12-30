@@ -1,0 +1,55 @@
+body{
+	display: flex;
+}
+
+#check{
+    width:450px;
+	height:450px;
+	border: 2px solid #666;
+	border-radius: 20px;
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+    background-color: #ffffff;
+
+}
+
+
+ input{
+	width: 100%;
+	padding:20px;
+	margin-top: 50px;
+	box-sizing: border-box;
+}
+
+
+input[type=submit]{
+	border:none;
+	background-color: #660000;
+	color:#ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#grade{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top:10px;
+	text-align:center;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: bold;
+	 text-shadow: 2px 2px 5px red;
+	 color:black;
+}
+
+#check h2 span{
+	text-transform: uppercase;
+}
+
+i{
+	margin-top: 20px;
+}
